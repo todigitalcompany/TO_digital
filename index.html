@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- <script type="module" crossorigin src="/assets/index-Pf14WD1q.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Qn4odg5w.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <title>Aymoon</title>
+</head>
+<style>
+   /* Text colors using your HSL variables */
+    .text-primary { color: hsl(var(--primary)); }
+    .text-primary-foreground { color: hsl(var(--primary-foreground)); }
+    .text-secondary { color: hsl(var(--secondary)); }
+    .text-muted { color: hsl(var(--muted-foreground)); }
+
+    /* Button gradient that uses your gradient variable */
+    .btn-gradient {
+      background: var(--gradient-primary);
+      color: hsl(var(--primary-foreground));
+      border-radius: 0.5rem;
+      padding: 0.75rem 1.25rem;
+      display: inline-block;
+      box-shadow: var(--shadow-blue);
+      transition: var(--transition-smooth);
+      text-decoration: none;
+    }
+    .btn-gradient:hover { transform: translateY(-3px); }
+
+    /* Circular icon bg that uses the same gradient */
+    .icon-gradient {
+      background: var(--gradient-primary);
+      color: hsl(var(--primary-foreground));
+      width: 64px;
+      height: 64px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-blue);
+    }
+
+    /* Check icon color for list */
+    .check-icon { color: hsl(var(--primary)); }
+
+    /* Card gradient helper */
+    .card-gradient { background: var(--gradient-card); }
+
+    /* ensure links / buttons have good contrast on hover */
+    .btn-gradient:focus { outline: 2px solid hsl(var(--ring)); outline-offset: 2px; }
+</style>
+<body>
+  <div class="preloader-progress">
+    <div class="preloader-progress-bar"></div>
+    <div class="preloader-logo">
+      <h1><span style="color: #E36A02 ;">TO</span> DIGITAL</h1>
+    </div>
+  </div>
+  <div class="preloader-mask">
+  </div>
+  <div class="preloader-content">
+    <div class="preloader-footer">
+      <p>Bringing Your Ideas to Life with a Digital Touch</p>
+    </div>
+  </div>
+  <div class="container_1">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-img">
+          <img class="lg-scr" src="./assets/hero-img.jpg" alt="" style="height: 100%; width: 100%;" />
+          <img class="sm-scr" src="./assets/Lucid_Origin_Futuristic_digital_art_showing_the_future_of_prog_1.jpg" alt="" style="height: 100%;" />
+        </div>
+
+        <div class="hero-content">
+          <div class="header">
+            <h1 style="display: flex; align-items: center; gap: 10px;">
+              <img class="logo-svg" src="./assets/Vector.svg" alt="Logo"
+                style="scale: 0; margin-right: 10px; height: auto;">
+              DIGITAL
+            </h1>
+          </div>
+          <div class="contact-btn">
+            <a href="https://wa.me/201286657954" target="_blank" class="btn">
+              <div class="btn-label">
+                <span>Contact</span>
+              </div>
+              <div class="btn-icon flex justify-center items-center">
+                <i class="fa-brands fa-whatsapp text-2xl h-100"></i>
+              </div>
+            </a>
+          </div>
+          <div class="menu-btn cursor-pointer">
+            <div class="btn">
+              <div class="btn-label">
+                <span>Menu</span>
+              </div>
+              <div class="btn-icon">
+                    <div class="nav-but-wrap">
+                      <div class="menu-icon hover-target">
+                        <span class="menu-icon__line menu-icon__line-left"></span>
+                        <span class="menu-icon__line"></span>
+                        <span class="menu-icon__line menu-icon__line-right"></span>
+                      </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+                <div class="nav">
+                  <div class="nav__content">
+                    <ul class="nav__list">
+                      <li class="nav__list-item"><a href="#home" class="hover-target">Home</a></li>
+                      <li class="nav__list-item"><a href="#about" class="hover-target">About</a></li>
+                      <li class="nav__list-item"><a href="#services" class="hover-target">Services</a></li>
+                      <li class="nav__list-item"><a href="#portfolio" class="hover-target">Portfolio</a></li>
+                      <li class="nav__list-item"><a href="#contact" class="hover-target">Contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+          <div class="hero-footer backdrop-blur-[1px]">
+            <h3>Touch Online. Transform Digitally</h3>
+            <p>With a touch online, TO Digital transforms visions into powerful websites and applications that drive
+              success in today’s digital world.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  <section id="about" class="section-padding animate fade-bottom">
+    <div class="container-max px-4">
+
+      <!-- Title -->
+      <div class="text-center mb-16 animate-slide-up">
+        <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+          About
+          <!-- uses your gradient exactly -->
+          <span class="bg-gradient-primary bg-clip-text text-transparent">TO Digital</span>
+        </h2>
+        <p class="text-xl text-muted max-w-3xl mx-auto leading-relaxed">
+          We are a passionate team of software developers, designers, and innovators dedicated to transforming businesses through technology.
+        </p>
+      </div>
+
+      <!-- Mission + Why choose us -->
+      <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+        <!-- Mission -->
+        <div class="animate-fade-in">
+          <h3 class="text-2xl font-semibold mb-6 text-primary">Our Mission</h3>
+          <p class="text-lg text-muted mb-6 leading-relaxed">
+            At TO Digital, we believe technology should simplify and enhance business operations. Our mission is to create innovative software solutions that drive growth, improve efficiency, and deliver exceptional user experiences.
+          </p>
+          <p class="text-lg text-muted mb-8 leading-relaxed">
+            Since our founding, we've partnered with businesses of all sizes—from ambitious startups to established enterprises—helping them navigate the digital landscape and achieve their goals through custom software development.
+          </p>
+
+          <!-- button uses your gradient variable and primary-foreground for text -->
+          <a href="#contact" class="btn-gradient" role="button">Start Your Project</a>
+        </div>
+
+        <!-- Why choose us -->
+        <div class="card-gradient rounded-2xl p-8 shadow-medium hover-lift">
+          <h3 class="text-2xl font-semibold mb-6 text-primary">Why Choose Us?</h3>
+          <ul class="space-y-4" style="color: hsl(var(--muted-foreground));">
+            <li class="flex items-start">
+              <svg class="h-6 w-6 check-icon mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4" />
+                <circle cx="12" cy="12" r="9" stroke-opacity="0.15"/>
+              </svg>
+              <span>Expert team with 5+ years of combined experience</span>
+            </li>
+
+            <li class="flex items-start">
+              <svg class="h-6 w-6 check-icon mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4" />
+                <circle cx="12" cy="12" r="9" stroke-opacity="0.15"/>
+              </svg>
+              <span>Agile development methodology for faster delivery</span>
+            </li>
+
+            <li class="flex items-start">
+              <svg class="h-6 w-6 check-icon mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4" />
+                <circle cx="12" cy="12" r="9" stroke-opacity="0.15"/>
+              </svg>
+              <span>24/7 support and maintenance services</span>
+            </li>
+
+            <li class="flex items-start">
+              <svg class="h-6 w-6 check-icon mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4" />
+                <circle cx="12" cy="12" r="9" stroke-opacity="0.15"/>
+              </svg>
+              <span>Transparent communication throughout the project</span>
+            </li>
+
+            <li class="flex items-start">
+              <svg class="h-6 w-6 check-icon mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4" />
+                <circle cx="12" cy="12" r="9" stroke-opacity="0.15"/>
+              </svg>
+              <span>Scalable solutions that grow with your business</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Core values -->
+      <div>
+        <h3 class="text-3xl font-semibold text-center mb-12 ">Our Core Values</h3>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Card 1 -->
+          <div class="text-center bg-card rounded-xl p-6 shadow-soft hover-lift animate-scale-in fade-right">
+            <div class="icon-gradient mx-auto mb-4" role="img" aria-hidden="true">
+              <!-- Zap icon (stroke uses currentColor which is primary-foreground via icon-gradient) -->
+              <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h4 class="text-xl font-semibold mb-3 text-primary">Innovation</h4>
+            <p class="text-muted">We stay ahead of technology trends to deliver cutting-edge solutions.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="text-center bg-card rounded-xl p-6 shadow-soft hover-lift animate-scale-in fade-left">
+            <div class="icon-gradient mx-auto mb-4" role="img" aria-hidden="true">
+              <!-- Users icon -->
+              <i class="fa-solid fa-user-group text-white text-xl "></i>
+            </div>
+            <h4 class="text-xl font-semibold mb-3 text-primary">Collaboration</h4>
+            <p class="text-muted">We work closely with our clients to understand and exceed their expectations.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="text-center bg-card rounded-xl p-6 shadow-soft hover-lift animate-scale-in fade-right">
+            <div class="icon-gradient mx-auto mb-4" role="img" aria-hidden="true">
+              <!-- Target icon -->
+              <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <circle cx="12" cy="12" r="4" />
+              </svg>
+            </div>
+            <h4 class="text-xl font-semibold mb-3 text-primary">Excellence</h4>
+            <p class="text-muted">We maintain the highest standards in every project we undertake.</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="text-center bg-card rounded-xl p-6 shadow-soft hover-lift animate-scale-in fade-left">
+            <div class="icon-gradient mx-auto mb-4" role="img" aria-hidden="true">
+              <!-- CheckCircle icon -->
+              <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4" />
+                <circle cx="12" cy="12" r="9" stroke-opacity="0.15" />
+              </svg>
+            </div>
+            <h4 class="text-xl font-semibold mb-3 text-primary">Reliability</h4>
+            <p class="text-muted">We deliver on time, every time, with robust and scalable solutions.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+<section id="services" class="py-20 bg-gray-100 rounded-[64px]  mx-4">
+  <div class="max-w-6xl mx-auto px-4">
+    <!-- Section Title -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+        Our
+        <span class="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 bg-clip-text text-transparent">
+          Services
+        </span>
+      </h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        We offer comprehensive software development services to help your business thrive in the digital age.
+      </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="grid md:grid-cols-3 gap-8 justify-center mb-12">
+      <!-- Service 1 -->
+      <div class="group fade-left bg-white rounded-2xl p-8 shadow-md hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+        <div class="flex items-start space-x-4 mb-6">
+          <div class="w-14 h-14 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
+            <i class="fas fa-code text-white text-2xl"></i>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-semibold mb-3">Web Development</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Custom web applications built with modern technologies like Angular, Node.js, Wordpress and cloud platforms.
+            </p>
+          </div>
+        </div>
+        <div class="mb-6">
+          <h4 class="font-semibold text-blue-500 mb-3">Key Features:</h4>
+          <ul class="grid grid-cols-2 gap-2">
+            <li class="flex items-center text-sm text-gray-600"><div class="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>Responsive Design</li>
+            <li class="flex items-center text-sm text-gray-600"><div class="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>Performance Optimization</li>
+            <li class="flex items-center text-sm text-gray-600"><div class="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>SEO-Friendly</li>
+            <li class="flex items-center text-sm text-gray-600"><div class="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>Cloud Deployment</li>
+          </ul>
+        </div>
+        <button onclick="location.href='#contact'" class="border px-5 py-2 rounded-lg font-medium group-hover:bg-blue-500 group-hover:text-white transition-all duration-300">
+          Learn More <i class="fas fa-arrow-right ml-2"></i>
+        </button>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="group fade-top bg-white rounded-2xl p-8 shadow-md hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+        <div class="flex items-start space-x-4 mb-6">
+          <div class="w-14 h-14 bg-gradient-to-r from-green-500 to-teal-600 rounded-xl flex items-center justify-center shadow-lg">
+            <i class="fas fa-mobile-alt text-white text-2xl"></i>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-semibold mb-3">Mobile Apps</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Native and cross-platform mobile applications for iOS and Android with exceptional user experiences.
+            </p>
+          </div>
+        </div>
+        <div class="mb-6">
+          <h4 class="font-semibold text-blue-500 mb-3">Key Features:</h4>
+          <ul class="grid grid-cols-2 gap-2">
+            <li class="flex items-center text-sm text-gray-600"><div class="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>Cross-Platform</li>
+            <li class="flex items-center text-sm text-gray-600"><div class="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>Native Performance</li>
+            <li class="flex items-center text-sm text-gray-600"><div class="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>App Store Optimization</li>
+            <li class="flex items-center text-sm text-gray-600"><div class="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>Push Notifications</li>
+          </ul>
+        </div>
+        <button onclick="location.href='#contact'" class="border px-5 py-2 rounded-lg font-medium group-hover:bg-blue-500 group-hover:text-white transition-all duration-300">
+          Learn More <i class="fas fa-arrow-right ml-2"></i>
+        </button>
+      </div>
+
+
+      <!-- Service 4 -->
+      <div class="group fade-right md:col-span-3 lg:col-span-1 mx-auto  bg-white rounded-2xl p-8 shadow-md hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+        <div class="flex items-start space-x-4 mb-6">
+          <div class="w-14 h-14 bg-gradient-to-r from-orange-500 to-red-600 rounded-xl flex items-center justify-center shadow-lg">
+            <i class="fas fa-palette text-white text-2xl"></i>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-semibold mb-3">UI/UX Design</h3>
+            <p class="text-gray-600 leading-relaxed">
+              User-centered design that creates intuitive and engaging digital experiences for your customers.
+            </p>
+          </div>
+        </div>
+        <div class="mb-6">
+          <h4 class="font-semibold text-blue-500 mb-3">Key Features:</h4>
+          <ul class="grid grid-cols-2 gap-2">
+            <li class="flex items-center text-sm text-gray-600"><div class="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>User Research</li>
+            <li class="flex items-center text-sm text-gray-600"><div class="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>Wireframing</li>
+            <li class="flex items-center text-sm text-gray-600"><div class="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>Prototyping</li>
+            <li class="flex items-center text-sm text-gray-600"><div class="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>Design Systems</li>
+          </ul>
+        </div>
+        <button onclick="location.href='#contact'" class="border px-5 py-2 rounded-lg font-medium group-hover:bg-blue-500 group-hover:text-white transition-all duration-300">
+          Learn More <i class="fas fa-arrow-right ml-2"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center">
+      <p class="text-lg text-gray-600 mb-6">
+        Need a custom solution? We'd love to discuss your project requirements.
+      </p>
+      <button class="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 text-white px-8 py-3 rounded-lg font-medium shadow-lg hover:opacity-90">
+        Start Your Project
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<section id="portfolio" class="section-padding bg-background">
+  <div class="max-w-7xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+        Our <span class="bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent">Portfolio</span>
+      </h2>
+      <p class="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+        Explore some of our recent projects that showcase our expertise in delivering innovative software solutions.
+      </p>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="grid lg:grid-cols-3 gap-8 mb-12">
+      <!-- Project 1 -->
+      <div class="group bg-card rounded-2xl overflow-hidden shadow-medium hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 fade-left">
+        <div class="relative overflow-hidden">
+          <img src="./assets/app-screen-showcase-mockup.webp" alt="E-Commerce Platform" class=" h-100 object-cover group-hover:hidden transition-transform duration-500">
+          <img src="./assets/standing-ipad-mockup.webp" alt="E-Commerce Platform" class="hidden h-100 object-cover group-hover:block transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute bottom-4 left-4 right-4 flex space-x-2">
+              <a href="https://apkpure.com/p/com.example.win_task" target="_blank" class="flex-1 bg-gradient-to-r from-blue-500 to-blue-700 text-white text-sm px-4 py-2 rounded-lg flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-arrow-up-right-from-square pr-2"></i> Live Demo
+              </a>
+              <a href="#" target="_blank" class="border hidden border-blue-500 text-blue-500 px-3 py-2 rounded-lg hover:bg-blue-500 hover:text-white transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.6-3.9-1.6-.5-1.3-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.6 2.3 2.8 2.3 1.1 0 1.9-.4 2.3-.9-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.2-3.3 0-.3-.5-1.5.1-3.1 0 0 1-.3 3.4 1.2a11.6 11.6 0 016.2 0c2.4-1.5 3.4-1.2 3.4-1.2.6 1.6.1 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.6-2.8 5.6-5.3 5.9.5.4 1 1.2 1 2.4v3.6c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6">
+          <div class="mb-3">
+            <span class="text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">Mobile Development</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-secondary">Points App</h3>
+          <p class="text-muted-foreground mb-4 leading-relaxed">
+            A full-stack mobile application for tracking and managing loyalty points across various platforms.
+          </p>
+          <div class="mb-4">
+            <h4 class="text-sm font-medium text-secondary mb-2">Technologies:</h4>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-muted text-muted-foreground px-2 py-1 rounded-md">Node.js</span>
+              <span class="text-xs bg-muted text-muted-foreground px-2 py-1 rounded-md">Flutter</span>
+              <span class="text-xs bg-muted text-muted-foreground px-2 py-1 rounded-md">MongoDB</span>
+              <span class="text-xs bg-muted text-muted-foreground px-2 py-1 rounded-md">Dart</span>
+              <span class="text-xs bg-muted text-muted-foreground px-2 py-1 rounded-md">React</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project 1 -->
+      <div class="group bg-card rounded-2xl overflow-hidden shadow-medium hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 fade-top">
+        <div class="relative overflow-hidden">
+          <img src="./assets/iphone-multiple-screens-mockup.webp" alt="E-Commerce Platform" class="h-100 object-cover group-hover:hidden transition-transform duration-500">
+          <img src="./assets/modern-laptop-mockup-with-airpods.webp" alt="E-Commerce Platform" class="hidden h-100 object-cover group-hover:block transition-transform duration-500">
+          <div class="absolute hidden inset-0 bg-gradient-to-t from-secondary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute hidden bottom-4 left-4 right-4 flex space-x-2">
+              <a href="#" target="_blank" class="flex-1 bg-gradient-to-r from-blue-500 to-blue-700 text-white text-sm px-4 py-2 rounded-lg flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-arrow-up-right-from-square pr-2"></i> Live Demo
+              </a>
+              <a href="#" target="_blank" class="border hidden border-blue-500 text-blue-500 px-3 py-2 rounded-lg hover:bg-blue-500 hover:text-white transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.6-3.9-1.6-.5-1.3-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.6 2.3 2.8 2.3 1.1 0 1.9-.4 2.3-.9-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.2-3.3 0-.3-.5-1.5.1-3.1 0 0 1-.3 3.4 1.2a11.6 11.6 0 016.2 0c2.4-1.5 3.4-1.2 3.4-1.2.6 1.6.1 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.6-2.8 5.6-5.3 5.9.5.4 1 1.2 1 2.4v3.6c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6">
+          <div class="mb-3">
+            <span class="text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">Mobile Development</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-secondary">Real estate selling and renting application</h3>
+          <p class="text-muted-foreground mb-4 leading-relaxed">
+           A real estate application that allows users to buy, sell, and rent properties with ease, featuring detailed listings, photos, and a powerful dashboard for full control over sales and rentals.
+          </p>
+          <div class="mb-4">
+            <h4 class="text-sm font-medium text-secondary mb-2">Technologies:</h4>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-muted text-muted-foreground px-2 py-1 rounded-md">Flutter</span>
+              <span class="text-xs bg-muted text-muted-foreground px-2 py-1 rounded-md"> SQLite</span>
+              <span class="text-xs bg-muted text-muted-foreground px-2 py-1 rounded-md">Firebase Cloud Firestore</span>
+              <span class="text-xs bg-muted text-muted-foreground px-2 py-1 rounded-md">MVVM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project 1 -->
+      <div class="group bg-card rounded-2xl overflow-hidden shadow-medium hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 fade-right">
+        <div class="relative overflow-hidden">
+          <img src="./assets/im6876.webp" alt="E-Commerce Platform" class="h-100 object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute bottom-4 left-4 right-4 flex space-x-2">
+              <a href="https://mostaql.com/portfolio/2732710-%D8%A7%D9%82%D8%AA%D8%B1%D8%A7%D8%AD-%D9%88%D8%B5%D9%81%D8%A7%D8%AA-%D8%A8%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D8%A9-%D8%A7%D9%84-ai" target="_blank" class="flex-1 bg-gradient-to-r from-blue-500 to-blue-700 text-white text-sm px-4 py-2 rounded-lg flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-arrow-up-right-from-square pr-2"></i> Live Demo
+              </a>
+              <a href="#" target="_blank" class="border hidden border-blue-500 text-blue-500 px-3 py-2 rounded-lg hover:bg-blue-500 hover:text-white transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.6-3.9-1.6-.5-1.3-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.6 2.3 2.8 2.3 1.1 0 1.9-.4 2.3-.9-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.2-3.3 0-.3-.5-1.5.1-3.1 0 0 1-.3 3.4 1.2a11.6 11.6 0 016.2 0c2.4-1.5 3.4-1.2 3.4-1.2.6 1.6.1 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.6-2.8 5.6-5.3 5.9.5.4 1 1.2 1 2.4v3.6c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6">
+          <div class="mb-3">
+            <span class="text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">Mobile Development</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-secondary">SUKRI App</h3>
+          <p class="text-muted-foreground mb-4 leading-relaxed">
+           AI-powered recipe suggestion app that recommends the top 5 recipes based on user’s ingredient 
+search and calorie preferences. 
+          </p>
+          <div class="mb-4">
+            <h4 class="text-sm font-medium text-secondary mb-2">Technologies:</h4>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-muted text-muted-foreground px-2 py-1 rounded-md">Flutter</span>
+              <span class="text-xs bg-muted text-muted-foreground px-2 py-1 rounded-md"> SQLite</span>
+              <span class="text-xs bg-muted text-muted-foreground px-2 py-1 rounded-md">Firebase Cloud Firestore</span>
+              <span class="text-xs bg-muted text-muted-foreground px-2 py-1 rounded-md">Python(NLTK, Sklearn)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project 1 -->
+      <div class="group bg-card rounded-2xl overflow-hidden shadow-medium hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 fade-left">
+        <div class="relative overflow-hidden">
+          <img src="./assets/project_4.jpg" alt="E-Commerce Platform" class="h-100 object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute bottom-4 left-4 right-4 flex space-x-2">
+              <a href="https://mostaql.com/portfolio/2525843-" target="_blank" class="flex-1 bg-gradient-to-r from-blue-500 to-blue-700 text-white text-sm px-4 py-2 rounded-lg flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-arrow-up-right-from-square pr-2"></i> Live Demo
+              </a>
+              <a href="#" target="_blank" class="border hidden border-blue-500 text-blue-500 px-3 py-2 rounded-lg hover:bg-blue-500 hover:text-white transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.6-3.9-1.6-.5-1.3-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.6 2.3 2.8 2.3 1.1 0 1.9-.4 2.3-.9-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.2-3.3 0-.3-.5-1.5.1-3.1 0 0 1-.3 3.4 1.2a11.6 11.6 0 016.2 0c2.4-1.5 3.4-1.2 3.4-1.2.6 1.6.1 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.6-2.8 5.6-5.3 5.9.5.4 1 1.2 1 2.4v3.6c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6">
+          <div class="mb-3">
+            <span class="text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">Mobile Development</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-secondary">Sales Management Application (Cashier)</h3>
+          <p class="text-muted-foreground mb-4 leading-relaxed">
+            Built a cashier app with real-time inventory management (online version) and offline capabilities 
+using local storage for transaction processing. Improved usability and reduced transaction 
+processing time by 30%
+          </p>
+          <div class="mb-4">
+            <h4 class="text-sm font-medium text-secondary mb-2">Technologies:</h4>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-muted text-muted-foreground px-2 py-1 rounded-md">Flutter</span>
+              <span class="text-xs bg-muted text-muted-foreground px-2 py-1 rounded-md"> SQLite</span>
+              <span class="text-xs bg-muted text-muted-foreground px-2 py-1 rounded-md">Firebase Cloud Firestore</span>
+              <span class="text-xs bg-muted text-muted-foreground px-2 py-1 rounded-md">MVVM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="group bg-card rounded-2xl overflow-hidden shadow-medium hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 fade-top">
+        <div class="relative overflow-hidden">
+          <img src="./assets/web_1.jpeg" alt="FinTech Mobile App" class="h-100 object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute bottom-4 left-4 right-4 flex space-x-2">
+              <a href="https://alfarouktv.com/" target="_blank" class="flex-1 bg-gradient-to-r from-blue-500 to-blue-700 text-white text-sm px-4 py-2 rounded-lg flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-arrow-up-right-from-square pr-2"></i> Live Demo
+              </a>
+              <a href="#" target="_blank" class="border hidden border-blue-500 text-blue-500 px-3 py-2 rounded-lg hover:bg-blue-500 hover:text-white transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.6-3.9-1.6-.5-1.3-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.6 2.3 2.8 2.3 1.1 0 1.9-.4 2.3-.9-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.2-3.3 0-.3-.5-1.5.1-3.1 0 0 1-.3 3.4 1.2a11.6 11.6 0 016.2 0c2.4-1.5 3.4-1.2 3.4-1.2.6 1.6.1 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.6-2.8 5.6-5.3 5.9.5.4 1 1.2 1 2.4v3.6c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <div class="mb-3">
+            <span class="text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">Web Development</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-secondary">Al-Farouk Islamic Website</h3>
+          <p class="text-muted-foreground mb-4 leading-relaxed">
+Alfarouk Islamic TV (alfarouktv.com), the official platform of Dr. Omar Al-Farouq Al-Bakri, was developed as a responsive Islamic content website with advanced search and SEO optimization.          </p>
+          <div class="mb-4">
+            <h4 class="text-sm font-medium text-secondary mb-2">Technologies:</h4>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-muted text-muted-foreground px-2 py-1 rounded-md">php Native</span>
+              <span class="text-xs bg-muted text-muted-foreground px-2 py-1 rounded-md">html,css,js</span>
+              <span class="text-xs bg-muted text-muted-foreground px-2 py-1 rounded-md">MySQL</span>
+              <span class="text-xs bg-muted text-muted-foreground px-2 py-1 rounded-md">Google Analytics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="group bg-card rounded-2xl overflow-hidden shadow-medium hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 fade-right">
+        <div class="relative overflow-hidden">
+          <img src="./assets/web_2.jpeg" alt="AI Analytics Dashboard" class="h-100 object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute bottom-4 left-4 right-4 flex space-x-2">
+              <a href="#" target="_blank" class="flex-1 bg-gradient-to-r from-blue-500 to-blue-700 text-white text-sm px-4 py-2 rounded-lg flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-arrow-up-right-from-square pr-2"></i> Live Demo
+              </a>
+              <a href="#" target="_blank" class="border hidden border-blue-500 text-blue-500 px-3 py-2 rounded-lg hover:bg-blue-500 hover:text-white transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.6-3.9-1.6-.5-1.3-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.6 2.3 2.8 2.3 1.1 0 1.9-.4 2.3-.9-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.2-3.3 0-.3-.5-1.5.1-3.1 0 0 1-.3 3.4 1.2a11.6 11.6 0 016.2 0c2.4-1.5 3.4-1.2 3.4-1.2.6 1.6.1 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.6-2.8 5.6-5.3 5.9.5.4 1 1.2 1 2.4v3.6c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <div class="mb-3">
+            <span class="text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">Web Development</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-secondary">E-Commerce Website</h3>
+          <p class="text-muted-foreground mb-4 leading-relaxed">
+TPC is a responsive WordPress-based e-commerce store, offering a modern design and seamless shopping experience across all devices.          </p>
+          <div class="mb-4">
+            <h4 class="text-sm font-medium text-secondary mb-2">Technologies:</h4>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs  bg-muted text-muted-foreground px-2 py-1 rounded-md">Wordpress</span>
+              <span class="text-xs bg-muted text-muted-foreground px-2 py-1 rounded-md">WooCommerce</span>
+              <span class="text-xs bg-muted text-muted-foreground px-2 py-1 rounded-md">PHP</span>
+              <span class="text-xs bg-muted text-muted-foreground px-2 py-1 rounded-md">JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center">
+      <p class="text-lg text-muted-foreground mb-6">
+        Interested in seeing more of our work or discussing your project?
+      </p>
+      <a href="#contact" class="inline-block btn-gradient text-white px-8 py-3 rounded-lg text-lg font-medium hover:opacity-90 transition">
+        Let's Talk About Your Project
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section id="contact" class="py-20 bg-gray-100 rounded-[64px]  mx-4">
+  <div class="max-w-6xl mx-auto px-4">
+    <!-- Section Title -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+        Get in <span class="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 bg-clip-text text-transparent">Touch</span>
+      </h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Ready to start your next project? We'd love to hear about your ideas and discuss how we can help bring them to life.
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-12">
+      <!-- Contact Form -->
+      <div class="bg-white rounded-2xl p-8 shadow-lg">
+        <h3 class="text-2xl font-semibold mb-6 ">Send us a Message</h3>
+        <form id="contactForm" class="space-y-6" action="https://formspree.io/f/xblzrdon"
+  method="POST"  >
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="name" class="text-sm font-medium text-gray-700 mb-2 block">Name *</label>
+              <input type="text" id="name" name="name" required placeholder="Your full name"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 transition" />
+            </div>
+            <div>
+              <label for="email" class="text-sm font-medium text-gray-700 mb-2 block">Email *</label>
+              <input type="email" id="email" name="email" required placeholder="your.email@example.com"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 transition" />
+            </div>
+          </div>
+
+          <div>
+            <label for="company" class="text-sm font-medium text-gray-700 mb-2 block">Company</label>
+            <input type="text" id="company" name="company" placeholder="Your company name"
+              class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 transition" />
+          </div>
+
+          <div>
+            <label for="message" class="text-sm font-medium text-gray-700 mb-2 block">Project Details *</label>
+            <textarea id="message" name="message" rows="6" required
+              placeholder="Tell us about your project, timeline, and requirements..."
+              class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 transition resize-none"></textarea>
+          </div>
+
+          <button type="submit"
+            class="w-full bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 text-white px-6 py-3 rounded-lg font-medium shadow-lg hover:opacity-90 flex items-center justify-center">
+            Send Message
+            <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </button>
+          <p id="formMessage" class="text-center text-green-600 font-medium mt-4 hidden">
+</p>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="space-y-8">
+        <!-- Contact Information -->
+        <div class="bg-gradient-to-r from-white via-blue-100 to-blue-400 rounded-2xl p-8 shadow-md">
+          <h3 class="text-2xl font-semibold mb-6 ">Contact Information</h3>
+          <div class="space-y-6">
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full flex items-center justify-center shadow-md">
+                <i class="fas fa-envelope text-white"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-gray-800 mb-1">Email</h4>
+                <a href="mailto:to.digitalcompany@gmail.com" class="text-gray-600 hover:text-blue-500">to.digitalcompany@gmail.com</a>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full flex items-center justify-center shadow-md">
+                <i class="fas fa-phone text-white"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-gray-800 mb-1">Phone</h4>
+                <a href="tel:+201286657954" class="text-gray-600 hover:text-blue-500">+20 128 665 7954</a>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4 hidden">
+              <div class="w-12 h-12 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full flex items-center justify-center shadow-md">
+                <i class="fas fa-map-marker-alt text-white"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-gray-800 mb-1">Office</h4>
+                <p class="text-gray-600">10th of Ramadan, Al-Urduniya, next to Al-Komi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Media -->
+        <div class="bg-white rounded-2xl p-8 shadow-md">
+          <h3 class="text-xl font-semibold mb-6 ">Follow Us</h3>
+          <div class="flex space-x-4">
+            <a href="https://www.linkedin.com/company/to-touch-online-digital/" class="w-12 h-12 bg-gradient-to-r from-[#0077B5] to-[#00A0DC] rounded-full text-xl flex items-center justify-center hover:scale-110 transition shadow-md">
+              <i class="fab fa-linkedin-in text-white"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61580610689896" class="w-12 h-12 bg-gradient-to-r from-[#1877F2] to-[#0D47A1] rounded-full text-xl flex items-center justify-center hover:scale-110 transition shadow-md">
+              <i class="fa-brands fa-facebook text-white"></i>
+            </a>
+            <a href="https://www.youtube.com/@TODigital-y2o" class="w-12 h-12 bg-gradient-to-r from-[#FF0000] to-[#CC0000] rounded-full text-xl flex items-center justify-center hover:scale-110 transition shadow-md">
+              <i class="fa-brands fa-youtube text-white"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Office Hours -->
+        <div class="bg-white rounded-2xl p-8 shadow-md">
+          <h3 class="text-xl font-semibold mb-4 ">Office Hours</h3>
+          <div class="space-y-2 text-gray-600">
+            <div class="flex justify-between">
+              <span>Saturday - Thursday</span>
+              <span>10:00 AM - 8:00 PM</span>
+            </div>
+            <div class="flex justify-between">
+              <span>Friday</span>
+              <span>Closed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-secondary text-secondary-foreground">
+  <div class="max-w-7xl mx-auto">
+    <!-- Main Footer Content -->
+    <div class="px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Company Info -->
+        <div class="lg:col-span-1">
+          <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent mb-4">
+            TO Digital
+          </h3>
+          <p class="text-secondary-foreground/80 mb-6 leading-relaxed">
+            Building innovative software solutions that transform businesses and create exceptional digital experiences.
+          </p>
+          <div class="space-y-2">
+            <a
+              href="mailto:to.digitalcompany@gmail.com"
+              class="flex items-center text-secondary-foreground/80 hover:text-blue-500 transition-colors"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12l-4-4m0 0l-4 4m4-4v12"/>
+              </svg>
+              to.digitalcompany@gmail.com
+            </a>
+            <a
+              href="tel:+201286657954"
+              class="flex items-center text-secondary-foreground/80 hover:text-blue-500 transition-colors"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m0 4h.01"/>
+              </svg>
+              +20 128 665 7954
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+          <ul class="space-y-3">
+            <li><a href="#home" class="text-secondary-foreground/80 hover:text-blue-500 transition-colors">Home</a></li>
+            <li><a href="#about" class="text-secondary-foreground/80 hover:text-blue-500 transition-colors">About</a></li>
+            <li><a href="#services" class="text-secondary-foreground/80 hover:text-blue-500 transition-colors">Services</a></li>
+            <li><a href="#portfolio" class="text-secondary-foreground/80 hover:text-blue-500 transition-colors">Portfolio</a></li>
+            <li><a href="#contact" class="text-secondary-foreground/80 hover:text-blue-500 transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h4 class="font-semibold text-lg mb-4">Services</h4>
+          <ul class="space-y-3 text-secondary-foreground/80">
+            <li>Web Development</li>
+            <li>Mobile Apps</li>
+            <li>UI/UX Design</li>
+          </ul>
+        </div>
+
+        <!-- Social & Newsletter -->
+        <div>
+          <h4 class="font-semibold text-lg mb-4">Connect With Us</h4>
+          <div class="flex space-x-4 mb-6">
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=61580610689896" class="w-10 h-10 bg-gradient-to-r from-[#1877F2] to-[#0D47A1] rounded-full text-white text-xl flex items-center justify-center hover:scale-110 transition-transform shadow-lg">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/company/to-touch-online-digital/" class="w-10 h-10 bg-gradient-to-r from-[#0077B5] to-[#00A0DC] rounded-full text-white text-xl flex items-center justify-center hover:scale-110 transition-transform shadow-lg">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a target="_blank" href="https://wa.me/201286657954"  class="w-10 h-10 bg-gradient-to-r from-[#25D366] to-[#128C7E] rounded-full text-white text-xl flex items-center justify-center hover:scale-110 transition-transform shadow-lg">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+          <p class="text-secondary-foreground/80 text-sm leading-relaxed">
+            Follow us for the latest updates on our projects and industry insights.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="border-t border-secondary-lighter px-4 sm:px-6 lg:px-8 py-6">
+      <div class="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+        <p class="text-secondary-foreground/60 text-sm">
+          © <span id="year"></span> TO Digital. All rights reserved.
+        </p>
+        <div class="flex space-x-6 text-sm">
+          <a href="#" class="text-secondary-foreground/60 hover:text-blue-500 transition-colors">Privacy Policy</a>
+          <a href="#" class="text-secondary-foreground/60 hover:text-blue-500 transition-colors">Terms of Service</a>
+          <a href="#" class="text-secondary-foreground/60 hover:text-blue-500 transition-colors">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
