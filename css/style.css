@@ -348,13 +348,13 @@ width: 100%;
     visibility: hidden;
     top: 50%;
     margin-top: 20px;
-    transform: translate(-3%, -50%);
+    transform: translate(-5%, -50%);
     width: 100%;
     text-align: center;
-    -webkit-transform: translate(-3%, -50%);
-    -moz-transform: translate(-3%, -50%);
-    -ms-transform: translate(-3%, -50%);
-    -o-transform: translate(-3%, -50%);
+    -webkit-transform: translate(-5%, -50%);
+    -moz-transform: translate(-5%, -50%);
+    -ms-transform: translate(-5%, -50%);
+    -o-transform: translate(-5%, -50%);
 }
 .nav__list {
 	position: relative;

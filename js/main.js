@@ -170,6 +170,14 @@ tl.to(splits.logoChars.chars, {
     ease: "power3.out",
   },
   "<"
+).to(
+  ".preloader-mask",
+  {
+    display: "none",
+    duration: 0,
+    ease: "power3.out",
+  },
+  "<"
 )
 .to(
   ".hero-img",
@@ -252,7 +260,7 @@ navLinks.forEach(link => {
         opacity: 0,
         rotate: 45,
         duration: .7,
-        ease: "power2.out",
+        ease: "linear",
         scrollTrigger: {
           trigger: el,
           start: "top 80%", // يبدأ الأنيميشن لما العنصر يوصل 80% من الشاشة
@@ -267,7 +275,7 @@ navLinks.forEach(link => {
         opacity: 0,
         duration: .7,
         rotate: -45,
-        ease: "power2.out",
+        ease: "linear",
         scrollTrigger: {
           trigger: el,
           start: "top 80%",
@@ -281,7 +289,7 @@ navLinks.forEach(link => {
         y: -100,
         opacity: 0,
         duration: .7,
-        ease: "power2.out",
+        ease: "linear",
         scrollTrigger: {
           trigger: el,
           start: "top 80%",
@@ -295,7 +303,7 @@ navLinks.forEach(link => {
         y: 100,
         opacity: 0,
         duration: .7,
-        ease: "power2.out",
+        ease: "linear",
         scrollTrigger: {
           trigger: el,
           start: "top 80%",
